@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  chatapp:
+    env_file:
+      - .env
+    image: golang:latest
+    hostname: fiancasapp
+    ports:
+      - 3101:3101
+    container_name: financasapp
+    working_dir: /app
+    build: .
+    volumes:
+      - ./:/app
+    tty: true
+    deploy:
+      resources:
+          limits:
+            memory: 512M
+

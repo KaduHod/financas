@@ -1,8 +1,5 @@
-version: '3.8'
 services:
-  chatapp:
-    env_file:
-      - .env
+  financas:
     image: golang:latest
     hostname: fiancasapp
     ports:

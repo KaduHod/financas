@@ -1,7 +1,7 @@
 services:
   financas:
     image: golang:latest
-    hostname: fiancasapp
+    hostname: financas
     ports:
       - 3101:3101
     container_name: financasapp
